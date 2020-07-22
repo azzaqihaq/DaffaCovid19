@@ -1,0 +1,2 @@
+rootProject.name='DaffaCovid19'
+include ':app'

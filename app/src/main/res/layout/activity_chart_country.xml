@@ -1,0 +1,242 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChartCountryActivity">
+
+    <!--    region kumpulan card-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp16"
+        android:layout_weight="1"
+        android:background="@drawable/bg_header_gray"
+        android:orientation="vertical"
+        android:padding="@dimen/dp8">
+
+
+    <!---       SLIDE 1      -->
+        <LinearLayout
+            style="@style/activityChart_ll_parrent"
+            tools:ignore="NestedWeights">
+
+            <ImageView
+                android:id="@+id/img_flag_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp8"
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher_background"
+                tools:ignore="NestedWeights" />
+
+            <androidx.cardview.widget.CardView
+                style="@style/activityChart_cardview">
+
+                <LinearLayout
+                    style="@style/activityChart_cardview_ll">
+
+                    <TextView
+                        android:id="@+id/txt_country_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Country Name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/sp20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_current"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="CURRENTLY"
+                        android:textSize="@dimen/sp12"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+        <!---       SLIDE 2      -->
+        <LinearLayout
+            style="@style/activityChart_ll_parrent"
+            tools:ignore="NestedWeights">
+
+            <androidx.cardview.widget.CardView
+                style="@style/activityChart_cardview"
+                app:cardBackgroundColor="@color/orange">
+
+                <LinearLayout
+                    style="@style/activityChart_cardview_ll">
+
+                    <TextView
+                        style="@style/activityChart_txt_name"
+                        android:text="Total Confirmed"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:id="@+id/txt_total_confirmed_current"
+                        style="@style/activityChart_txt_value"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/activityChart_cardview"
+                app:cardBackgroundColor="@color/orange_gray">
+
+                <LinearLayout
+                    style="@style/activityChart_cardview_ll">
+
+                    <TextView
+                        style="@style/activityChart_txt_name"
+                        android:text="New Confirmed"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:id="@+id/txt_new_confirmed_current"
+                        style="@style/activityChart_txt_value"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+        <!---       SLIDE 3      -->
+        <LinearLayout
+            style="@style/activityChart_ll_parrent"
+            tools:ignore="NestedWeights">
+
+            <androidx.cardview.widget.CardView
+                style="@style/activityChart_cardview"
+                app:cardBackgroundColor="@color/yellow">
+
+                <LinearLayout
+                    style="@style/activityChart_cardview_ll">
+
+                    <TextView
+                        style="@style/activityChart_txt_name"
+                        android:text="Total Deaths"
+                        android:textColor="@color/red"/>
+
+                    <TextView
+                        android:id="@+id/txt_total_deaths_current"
+                        style="@style/activityChart_txt_value"
+                        android:textColor="@color/red"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/activityChart_cardview"
+                app:cardBackgroundColor="@color/yellow_gray">
+
+                <LinearLayout
+                    style="@style/activityChart_cardview_ll">
+
+                    <TextView
+                        style="@style/activityChart_txt_name"
+                        android:text="New Deaths"
+                        android:textColor="@color/red"/>
+
+                    <TextView
+                        android:id="@+id/txt_new_deaths_current"
+                        style="@style/activityChart_txt_value"
+                        android:textColor="@color/red"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+
+        <!---       SLIDE 4      -->
+        <LinearLayout
+            style="@style/activityChart_ll_parrent"
+            tools:ignore="NestedWeights">
+
+            <androidx.cardview.widget.CardView
+               style="@style/activityChart_cardview"
+                app:cardBackgroundColor="@color/colorAccent">
+
+                <LinearLayout
+                    style="@style/activityChart_cardview_ll">
+
+                    <TextView
+                        style="@style/activityChart_txt_name"
+                        android:text="Total Recovered"
+                        android:textColor="@color/red"/>
+
+                    <TextView
+                        android:id="@+id/txt_total_recovered_current"
+                        style="@style/activityChart_txt_value"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/activityChart_cardview"
+                app:cardBackgroundColor="@color/blue_gray">
+
+                <LinearLayout
+                    style="@style/activityChart_cardview_ll">
+
+                    <TextView
+                        style="@style/activityChart_txt_name"
+                        android:text="New Recovered"
+                        android:textColor="@color/red"/>
+
+                    <TextView
+                        android:id="@+id/txt_new_recovered_current"
+                        style="@style/activityChart_txt_value"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!---       END SLIDE      -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp4"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp8" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

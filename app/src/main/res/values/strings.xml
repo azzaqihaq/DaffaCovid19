@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DaffaCovid19</string>
+    <string name="countries">countries</string>
+    <string name="total_cases">total_cases</string>
+    <string name="recovered">recovered</string>
+    <string name="deaths">deaths</string>
+    <string name="confirmed">confirmed</string>
+    <string name="cases">Cases</string>
+</resources>
